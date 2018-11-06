@@ -31,7 +31,6 @@ for groups in phoneRegex.findall(text):
 for groups in emailRegex.findall(text):
     matches.append(groups[0])
 
-
 # TODO: Copy results to the clipboard.
 if len(matches) > 0:
     pyperclip.copy('\n'.join(matches))
