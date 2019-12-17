@@ -1,3 +1,15 @@
+# How to use the script
+
+# run the fullowing command to start a SMTPD server:
+#   python -m smtpd -c DebuggingServer -n localhost:1025
+
+# A csv file with the list of contacts should be available in the same directory as the script
+# The file should ba called data.csv
+# Format of the file:
+
+# reference,name,email,price
+# MXXXXXXXXXXX,Customer Name,customername@mail.com,250.0
+
 import smtplib, ssl, getpass, csv, time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
