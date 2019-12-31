@@ -19,7 +19,7 @@ uid = common.authenticate(db, username, password, {})
 
 models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(url))
 res = models.execute_kw(db, uid, password, 'account.invoice', 'search_read', 
-    [[["user_id", "ilike", "ibe"], ["date_invoice", ">=", start], ["date_invoice", "<=", end]]],
+    [[["user_id", "ilike", "usr"], ["date_invoice", ">=", start], ["date_invoice", "<=", end]]],
     {'fields': ['amount_total_signed']})
 
 total = sum(map(lambda x: float(x['amount_total_signed']), res))
