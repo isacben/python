@@ -1,5 +1,7 @@
 # Isaac Benitez
 # Customer Success Manager
+# Odoo Inc.
+
 # This scripts gets the reveneu invoiced by a user, within a period of time.
 
 import xmlrpc.client
