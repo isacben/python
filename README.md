@@ -1,2 +1,2 @@
 # python
-Examples of python scripts
+My python scripts.
